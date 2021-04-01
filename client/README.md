@@ -6,6 +6,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `GIT`
+To commit changes to git:
+open git bash
+cd to the directory of MYSIFILE
+git checkout frontend
+git add .
+git commit -m 'message'
+git push --set-upstream origin frontend
+
+
 ### `npm start`
 
 Runs the app in the development mode.\
