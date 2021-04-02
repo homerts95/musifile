@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body {
+   
+    background:linear-gradient(rgba(0, 0, 0, 0.9),#7f979c);
+    overflow-x: hidden;
+    padding-top: 90px;
+    font-family: Tahoma, Geneva, sans-serif;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+   
+
+.profile-header{
+    background: #646464;
+    width: 100%;
+    display: flex;
+    height: 190%;
+    position: relative;
+    box-shadow: 0px 3px 4px rgba(0,0,0,0.2);
+}
+
+.profile-img {
+    float: left;
+    width: 340px;
+    height: auto;
+
+}
+.profile-img img {
+    border-radius: 50%;
+    height: 210px;
+    width: 210x;
+    border: 4px solid #353434;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+    position: absolute;
+    left: 50px;
+}
+.profile-nav-info {
+    float: left;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+
+}
+.profile-nav-info h3 {
+    font-variant: small-caps;
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+
+}
+.profile-nav-info .preferences {
+    margin-right: 5px;
+}
+    
+.profile-option {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 200px;
+    top: 50px;
+    display: flex;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    border: 1px solid #dddddd;
+    margin-bottom: 10px;
+}
+.notification, .chat {
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    padding: 15px 26px;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+    
+  }
+  
+  .notification:hover, .chat:hover {
+    background: red;
+  }
+  
+  .notification .badge, .notification.badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+  }
+  
+}
+
+.main-bd {
+    width: 100%;
+    display: flex;
+    padding-right: 15px;
+
+}
+.profile-side{
+    width: 300px;
+    height: 400px;
+    background: #353434;
+    box-shadow: 0px 3px 5px rgba(0,0,0,.2);
+    padding: 90px 30px 20px;
+    font-family: sans-serif;
+    margin-left: 10px;
+    z-index: 99;
+}
+.profile-side p{
+    margin-bottom: 7px;
+    color:#ffff;
+    font-size: 14px;
+}
