@@ -1,20 +1,22 @@
 
 import './App.css';
+import Login from './pages/Login'
+import Register from "./pages/Register"
+import{
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom"
 
 function App() {
-
-  return (
-    <div className="App">
-     <h1>hello sdf</h1>
-      <div className="form">
-        <label>Username</label>
-        <input type="text" name="username"/>
-        <label>password</label>
-        <input type="text" name="password"/>
-        <button>login</button>
-      </div>
-    </div>
-  );
+  return(
+    <Router>
+      <Route path="/" exact render={() => <Login />} />
+      <Route path="/register" exact render={() => <Register />} />
+    </Router>
+  )
+  
 }
 
 export default App;

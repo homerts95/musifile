@@ -47,10 +47,11 @@ body {
     font-weight: bold;
     color: #ffffff;
 
-    .App {
+   
+}
+.App {
   text-align: center;
 }
-
 .form {
   display: flex;
   flex-direction: column;
